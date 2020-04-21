@@ -1,4 +1,4 @@
-# scl
+# Sclstudo
 
 ## Project setup
 ```
