@@ -39,6 +39,9 @@ export default {
     display: flex;
     padding : 0 10%;
     align-items: flex-end;
+    position: fixed;
+    z-index: 2;
+    margin-bottom: 40px;
     &-menu {
         flex-grow: 1;
         flex-shrink: 0;

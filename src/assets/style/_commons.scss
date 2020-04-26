@@ -1,0 +1,30 @@
+@import "./variable/color";
+
+.container {
+    padding: 0 10%;
+
+}
+
+.circle {
+    height: 14px;
+    width: 14px;
+    background-color: #121212;
+    border-radius: 50%;
+    display: inline-block;
+}
+.devider {
+    width: 100%;
+    height: 2px;
+    background-color: #121212;
+}
+.text-yellow {
+    color: $scl_yellow;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.scl-content {
+    padding: 0 10%;
+}

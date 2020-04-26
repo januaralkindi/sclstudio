@@ -1,5 +1,5 @@
 <template>
-	<div class="banner">
+	<div id="home-banner" class="banner scl-content">
 		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 		<v-row class="d-flex">
 			<v-col cols="12" md="6" class="d-flex">
@@ -12,8 +12,7 @@
 						<h1 class="banner-title text-yellow">Design.</h1>
 					</div>
 					<div class="banner-devider">
-						<div class="circle"></div>
-						<div class="devider "></div>
+						<Devider />
 					</div>
 					<div class="banner-subtitle">
 						<p>
@@ -41,8 +40,12 @@
 
 <script>
 	import { grow_plant } from "assets/image/image";
+	import Devider from "components/Devider";
 	export default {
 		name: "HomeHeader",
+		components: {
+			Devider,
+		},
 		data() {
 			return {
 				grow_plant,
@@ -53,14 +56,17 @@
 
 <style lang="scss">
 	@import "~@/assets/style/variable/color";
+	.home-banner {
+	}
 
 	.banner {
 		background-image: url("~@/assets/image/home-banner.png");
 		width: 100%;
 		min-height: 844px;
-		padding: 0 10%;
 		background-size: cover;
 		display: flex;
+		padding-top: 124px;
+		margin-bottom: 120px;
 
 		&-left {
 			display: flex;
@@ -109,18 +115,7 @@
 			margin-top: -86px;
 		}
 	}
-	.circle {
-		height: 14px;
-		width: 14px;
-		background-color: #121212;
-		border-radius: 50%;
-		display: inline-block;
-	}
-	.devider {
-		width: 100%;
-		height: 2px;
-		background-color: #121212;
-	}
+
 	.text-yellow {
 		color: $scl_yellow;
 	}
