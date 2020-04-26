@@ -3,7 +3,14 @@
 		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 		<v-row class="d-flex">
 			<v-col cols="12" md="6" class="d-flex justify-start align-center">
-				<div class="d-flex justify-center flex-sm-column">
+				<div
+					class="d-flex justify-center flex-sm-column"
+					data-aos="fade-right"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+				>
 					<h2 class="about-title">
 						We are a creative <br />
 						digital media.
@@ -22,16 +29,37 @@
 				</div>
 			</v-col>
 			<v-col cols="12" md="6" class=" d-flex justify-center align-center">
-				<img :src="mobile_digital_media" />
+				<img
+					:src="mobile_digital_media"
+					data-aos="fade-left"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+				/>
 			</v-col>
 		</v-row>
 
 		<v-row class="d-flex">
 			<v-col cols="12" md="6" class="d-flex justify-start align-center">
-				<img :src="mobile_branding" />
+				<img
+					data-aos="fade-right"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					:src="mobile_branding"
+				/>
 			</v-col>
 			<v-col cols="12" md="6" class=" d-flex justify-start align-center">
-				<div class="d-flex justify-center flex-sm-column">
+				<div
+					class="d-flex justify-center flex-sm-column"
+					data-aos="fade-left"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+				>
 					<h2 class="about-title">
 						Ask about design <br />
 						branding & development.
@@ -53,7 +81,14 @@
 		</v-row>
 		<v-row class="d-flex">
 			<v-col cols="12" md="6" class="d-flex justify-start align-center">
-				<div class="d-flex justify-center flex-sm-column">
+				<div
+					class="d-flex justify-center flex-sm-column"
+					data-aos="fade-left"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+				>
 					<h2 class="about-title">
 						Being small we can
 						<br />
@@ -73,7 +108,14 @@
 				</div>
 			</v-col>
 			<v-col cols="12" md="6" class=" d-flex justify-start align-center">
-				<img :src="laptop_detail" />
+				<img
+					data-aos="fade-up"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					:src="laptop_detail"
+				/>
 			</v-col>
 		</v-row>
 	</div>

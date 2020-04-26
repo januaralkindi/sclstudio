@@ -3,7 +3,16 @@
 		<div
 			class="project__title service-title d-flex  justify-center align-center "
 		>
-			<h1 class="project-title__title">Our Project.</h1>
+			<h1
+				class="project-title__title"
+				data-aos="fade-down"
+				data-aos-offset="200"
+				data-aos-delay="50"
+				data-aos-duration="1000"
+				data-aos-easing="ease-in-out"
+			>
+				Our Project.
+			</h1>
 			<div class="project-title__devider">
 				<Devider color="yellow" size="small" />
 			</div>

@@ -41,7 +41,6 @@ export default {
     align-items: flex-end;
     position: fixed;
     z-index: 2;
-    margin-bottom: 40px;
     &-menu {
         flex-grow: 1;
         flex-shrink: 0;
@@ -91,5 +90,9 @@ export default {
         background-color: $scl_yellow;
         border-radius: 0px 0px 20px 0px;
     }
+}
+
+.v-toolbar__content{
+    width: 100%;
 }
 </style>

@@ -11,3 +11,5 @@ export const indihome_logo = require('./client/indihome-logo.png')
 export const nescafe_logo = require('./client/nescafe-logo.png')
 export const telkomsel_logo = require('./client/telkomsel-logo.png')
 export const unilever_logo= require('./client/unilever-logo.png')
+export const banner_services= require('./banner-services.png')
+

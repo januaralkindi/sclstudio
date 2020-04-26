@@ -3,21 +3,28 @@
 		<div
 			class="services__title service-title d-flex  justify-center align-center "
 		>
-			<h1 class="services-title__title">Our Services.</h1>
+			<h1
+				class="services-title__title"
+				data-aos="fade-down"
+				data-aos-offset="1"
+				data-aos-delay="50"
+				data-aos-duration="1000"
+			>
+				Our Services.
+			</h1>
 			<div class="services-title__devider">
 				<Devider color="yellow" size="small" />
 			</div>
 		</div>
 		<div class="services__list">
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
-			<ServciesCard />
+			<ServciesCard
+				v-for="i in 6"
+				:key="i"
+				data-aos="fade-left"
+				data-aos-offset="1"
+				:data-aos-delay="50 + i * 100"
+				:data-aos-duration="1000 + i * 20"
+			/>
 		</div>
 	</div>
 </template>

@@ -1,28 +1,31 @@
 <template>
- <div>
-     <v-app>
-        <Navbar/>
-            <slot>
-            </slot>
-        <Footer/>
-     </v-app>
- </div>
+	<div>
+		<v-app>
+			<Navbar />
+			<div class="scl-container">
+				<slot> </slot>
+			</div>
+
+			<Footer />
+		</v-app>
+	</div>
 </template>
 
 <script>
-import Navbar from  'components/Naviagtion'
-import Footer from  'components/Footer'
+	import Navbar from "components/Naviagtion";
+	import Footer from "components/Footer";
 
-export default {
-    name: 'defaultLayout',
-    components  : {
-        Navbar,
-        Footer
-    }
-
-}
+	export default {
+		name: "defaultLayout",
+		components: {
+			Navbar,
+			Footer,
+		},
+	};
 </script>
 
-<style>
-
+<style lang="scss">
+.scl-container{
+    // padding-top: 124px;
+}
 </style>

@@ -3,6 +3,7 @@
 		<div class="footer__patner">
 			<FooterPatner />
 		</div>
+		<div class="footer__contact-devider"></div>
 		<div class="footer__contact footer-contact scl-content">
 			<div class="foote-contact__detail contact-detail">
 				<div class="contact-detail__left contact-action">
@@ -27,7 +28,7 @@
 						<v-icon>mdi-phone-outline</v-icon>
 						<p>+6281 888 665 775</p>
 					</div>
-					<h2  class="contact-description__title-social">Follow us</h2>
+					<h2 class="contact-description__title-social">Follow us</h2>
 					<div class="contact-description__social">
 						<v-icon> fab fa-facebook-f</v-icon>
 						<v-icon> fab fa-instagram</v-icon>
@@ -53,26 +54,34 @@
 	};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@import "~@/assets/style/variable/color";
 
 	.footer {
 		width: 100%;
 
 		&__contact {
-			min-height: 560px;
+			min-height: 458px;
 			width: 100%;
-			background: url('~@/assets/image/background-footer.png') no-repeat center;
-			// background-repeat: no-repeat;
-			background-size: 100% 100%;
-			margin-top: -112px;
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
 			align-self: center;
 			flex-direction: column;
 			padding-bottom: 36px !important;
-    padding-top: 92px !important;
+			background: #fafafa url("~@/assets/image/background-footer-left.png")
+				no-repeat;
+			background-position-y: bottom;
+			background-size: auto;
+		}
+
+		&__contact-devider {
+			margin-top: -116px;
+			width: 100%;
+			height: 160px;
+			background: url("~@/assets/image/background-footer-top.png") no-repeat
+				center;
+			background-size: 100% 100%;
 		}
 	}
 	.contact-detail {
@@ -94,26 +103,26 @@
 			font-weight: 600;
 			font-size: 24px;
 			line-height: 36px;
-            color: #121212;
-            margin: 12px 0px
-        }
-        &__item{
-            display: flex;
-            align-items: center;
-            p{
-                margin: 8px;
-            }
-        }
+			color: #121212;
+			margin: 12px 0px;
+		}
+		&__item {
+			display: flex;
+			align-items: center;
+			p {
+				margin: 8px;
+			}
+		}
 
-        &__title-social{
-            margin-top: 36px!important;
-        }
-        &__social {
-            display: flex;
-            i{
-                margin-right: 16px;
-            }
-        }
+		&__title-social {
+			margin-top: 36px !important;
+		}
+		&__social {
+			display: flex;
+			i {
+				margin-right: 16px;
+			}
+		}
 		// display: flex;
 	}
 	.contact-action {

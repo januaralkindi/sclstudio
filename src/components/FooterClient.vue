@@ -27,11 +27,11 @@
 				:dragging-distance="80"
 				:breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
 			>
-				<vueper-slide v-for="i in 10" :key="i" :title="i.toString()">
+				<vueper-slide v-for="(images,index) in dataClients" :key="index" :title="index.toString()">
 					<template v-slot:content>
 						<div class="vueperslide__content-wrapper">
 							<div class="client-item">
-								<img :src="dataClients[i]" alt="" />
+								<img :src="images" alt="" />
 							</div>
 						</div>
 					</template>

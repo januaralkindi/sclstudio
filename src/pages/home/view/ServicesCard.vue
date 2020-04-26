@@ -1,5 +1,5 @@
 <template>
-	<div class="services-card d-flex justify-center align-center">
+	<div class="services-card d-flex justify-center align-center" v-bind="$props">
 		<div class="services-card__content card-content">
 			<div class="card-content__icon">
 				<v-icon color="#F4C924"> mdi-cellphone</v-icon>

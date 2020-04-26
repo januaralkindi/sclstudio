@@ -3,7 +3,17 @@
 		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 		<v-row class="d-flex">
 			<v-col cols="12" md="6" class="d-flex">
-				<div class="banner-left">
+				<div
+					class="banner-left"
+					data-aos="fade-down"
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
 					<div class="banner-content-title">
 						<h1 class="banner-title">
 							We <br />
@@ -23,7 +33,17 @@
 				</div>
 			</v-col>
 			<v-col cols="12" md="6" class=" d-flex justify-end align-center">
-				<div class="banner-right">
+				<div
+					class="banner-right"
+					data-aos="fade-left"
+					data-aos-offset="1"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
 					<div class="banner-card">
 						<img :src="grow_plant" />
 						<div class="banner-card-title">
@@ -60,7 +80,7 @@
 	}
 
 	.banner {
-		background-image: url("~@/assets/image/home-banner.png");
+		background: url("~@/assets/image/home-banner.png");
 		width: 100%;
 		min-height: 844px;
 		background-size: cover;

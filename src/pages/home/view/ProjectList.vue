@@ -9,12 +9,15 @@
 			</p>
 		</div>
 		<div class="project-list__list">
-			<ProjectItem />
-			<ProjectItem />
-			<ProjectItem />
-			<ProjectItem />
-			<ProjectItem />
-			<ProjectItem />
+			<ProjectItem v-for="i in 6" :key="i" 
+				data-aos="fade-left"
+				data-aos-offset="1"
+				:data-aos-delay="50 + (i * 100)"
+				:data-aos-duration="1000 + (i * 20)"
+				data-aos-easing="ease-in-out"
+            
+            />
+		
 		</div>
 	</div>
 </template>
