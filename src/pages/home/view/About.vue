@@ -7,9 +7,10 @@
 					class="d-flex justify-center flex-sm-column"
 					data-aos="fade-right"
 					data-aos-offset="200"
-					data-aos-delay="50"
-					data-aos-duration="1000"
+					data-aos-delay="25"
+					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
+					data-aos-once="true"
 				>
 					<h2 class="about-title">
 						We are a creative <br />
@@ -33,9 +34,10 @@
 					:src="mobile_digital_media"
 					data-aos="fade-left"
 					data-aos-offset="200"
-					data-aos-delay="50"
-					data-aos-duration="1000"
+					data-aos-delay="25"
+					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
+					data-aos-once="true"
 				/>
 			</v-col>
 		</v-row>
@@ -48,6 +50,7 @@
 					data-aos-delay="50"
 					data-aos-duration="1000"
 					data-aos-easing="ease-in-out"
+					data-aos-once="true"
 					:src="mobile_branding"
 				/>
 			</v-col>
@@ -58,6 +61,8 @@
 					data-aos-offset="200"
 					data-aos-delay="50"
 					data-aos-duration="1000"
+					data-aos-once="true"
+
 					data-aos-easing="ease-in-out"
 				>
 					<h2 class="about-title">
@@ -84,10 +89,11 @@
 				<div
 					class="d-flex justify-center flex-sm-column"
 					data-aos="fade-left"
-					data-aos-offset="200"
-					data-aos-delay="50"
-					data-aos-duration="1000"
+					data-aos-offset="100"
+					data-aos-delay="25"
+					data-aos-duration=500
 					data-aos-easing="ease-in-out"
+					data-aos-once="true"
 				>
 					<h2 class="about-title">
 						Being small we can
@@ -110,10 +116,11 @@
 			<v-col cols="12" md="6" class=" d-flex justify-start align-center">
 				<img
 					data-aos="fade-up"
-					data-aos-offset="200"
-					data-aos-delay="50"
-					data-aos-duration="1000"
+					data-aos-offset="100"
+					data-aos-delay="25"
+					data-aos-duration=500
 					data-aos-easing="ease-in-out"
+					data-aos-once="true"
 					:src="laptop_detail"
 				/>
 			</v-col>

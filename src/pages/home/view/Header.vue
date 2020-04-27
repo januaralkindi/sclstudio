@@ -11,7 +11,7 @@
 					data-aos-duration="1000"
 					data-aos-easing="ease-in-out"
 					data-aos-mirror="true"
-					data-aos-once="false"
+					data-aos-once="true"
 					data-aos-anchor-placement="top-center"
 				>
 					<div class="banner-content-title">
@@ -41,7 +41,7 @@
 					data-aos-duration="1000"
 					data-aos-easing="ease-in-out"
 					data-aos-mirror="true"
-					data-aos-once="false"
+					data-aos-once="true"
 					data-aos-anchor-placement="top-center"
 				>
 					<div class="banner-card">

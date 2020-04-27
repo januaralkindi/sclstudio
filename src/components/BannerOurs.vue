@@ -6,16 +6,16 @@
 				md="6"
 				class=" banner__detail banner-detail d-flex"
 				data-aos="fade-right"
-				data-aos-offset="200"
+				data-aos-offset="100"
 				data-aos-delay="50"
 				data-aos-duration="1000"
 				data-aos-easing="ease-in-out"
 				data-aos-mirror="true"
-				data-aos-once="false"
+				data-aos-once="true"
 				data-aos-anchor-placement="top-center"
 			>
-				<h2 class="banner-detai__subtitle">{{ subTitle }}</h2>
-				<h1 class="banner-detai__Title">{{ title }}</h1>
+				<h2 class="banner-detail__subtitle">{{ subTitle }}</h2>
+				<h1 class="banner-detail__title">{{ title }}</h1>
 				<slot></slot>
 			</v-col>
 			<v-col cols="12" md="6" class=" d-flex justify-end align-center" 
@@ -25,7 +25,7 @@
 					data-aos-duration="1000"
 					data-aos-easing="ease-in-out"
 					data-aos-mirror="true"
-					data-aos-once="false"
+					data-aos-once="true"
 					data-aos-anchor-placement="top-center"
             >
 				<img class="banner__image" :src="image" />
@@ -67,7 +67,7 @@
 	}
 
 	.banner-detail {
-		&__sub-title {
+		&__subtitle {
 			font-style: normal;
 			font-weight: normal;
 			font-size: 40px;

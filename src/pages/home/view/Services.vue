@@ -9,6 +9,7 @@
 				data-aos-offset="1"
 				data-aos-delay="50"
 				data-aos-duration="1000"
+				data-aos-once="true"
 			>
 				Our Services.
 			</h1>
@@ -22,8 +23,9 @@
 				:key="i"
 				data-aos="fade-left"
 				data-aos-offset="1"
-				:data-aos-delay="50 + i * 100"
-				:data-aos-duration="1000 + i * 20"
+				:data-aos-delay="5 + i * 100"
+				:data-aos-duration="500 + i * 20"
+				data-aos-once="true"
 			/>
 		</div>
 	</div>

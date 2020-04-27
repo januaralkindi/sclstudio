@@ -1,10 +1,14 @@
 import Home from 'pages/home'
 import Services from 'pages/services'
+import Products from 'pages/products'
+
 import VueRouter from 'vue-router'
 
 const routes = [
     { path: '/', component: Home ,name:'home' },
     { path: '/services', component: Services ,name:'services' },
+    { path: '/products', component: Products ,name:'products' },
+
 
   ]
   
