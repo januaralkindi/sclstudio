@@ -3,6 +3,7 @@ import Services from 'pages/services'
 import Products from 'pages/products'
 import Works from 'pages/work'
 import Sanmaru from 'pages/product-sanmaru'
+import Andayama from 'pages/product-andayama'
 
 import VueRouter from 'vue-router'
 
@@ -12,7 +13,7 @@ const routes = [
     { path: '/products', component: Products ,name:'products' },
     { path: '/work', component: Works ,name:'work' },
     { path: '/products/sanmaru', component: Sanmaru ,name:'products-sanmaru' },
-
+    { path: '/products/andayama', component: Andayama ,name:'products-andayama' },
 
   ]
   
