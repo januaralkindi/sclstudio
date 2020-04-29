@@ -1,28 +1,24 @@
 <template>
-	<DefaultLayout>
-		<Header />
-		<About />
-		<Services />
-		<Project />
-	</DefaultLayout>
+	<div>
+		<mq-layout mq="sm">
+			<HomeMobile />
+		</mq-layout>
+		<mq-layout :mq="['md', 'lg']">
+			<HomeDekstop />
+		</mq-layout>
+	</div>
 </template>
 
 <script>
-	import DefaultLayout from "../../layout/Default";
-	import Header from "./view/Header";
-	import About from "./view/About";
-	import Services from "./view/Services";
-	import Project from "./view/Project";
+	import HomeDekstop from "./dekstop";
+	import HomeMobile from "./mobile";
 	import AOS from "aos";
 
 	export default {
 		name: "HomePage",
 		components: {
-			DefaultLayout,
-			Header,
-			About,
-			Services,
-			Project,
+			HomeDekstop,
+			HomeMobile,
 		},
 		created() {
 			AOS.init();

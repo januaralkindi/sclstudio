@@ -54,7 +54,7 @@
 	};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.banner {
 		background: url("~@/assets/image/background-banner.png");
 		background-repeat: no-repeat;

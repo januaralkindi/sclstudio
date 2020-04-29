@@ -27,6 +27,7 @@
 				:dragging-distance="80"
 				:breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
 			>
+			
 				<vueper-slide v-for="(images,index) in dataClients" :key="index" :title="index.toString()">
 					<template v-slot:content>
 						<div class="vueperslide__content-wrapper">

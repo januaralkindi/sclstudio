@@ -48,7 +48,7 @@
 	};
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 	.banner {
 		background: url("~@/assets/image/banner-andayama.png");
 		background-repeat: no-repeat;
