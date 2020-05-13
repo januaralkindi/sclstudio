@@ -29,5 +29,5 @@
 </script>
 
 <style lang="scss">
-	@import "~@/assets/style/commons";
+	// @import "~@/assets/style/commons";
 </style>

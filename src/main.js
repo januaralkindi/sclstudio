@@ -5,7 +5,7 @@ import Router from "./config/router";
 import VueRouter from "vue-router"
 import VueMq from 'vue-mq';
 import "aos/dist/aos.css";
-
+import "assets/style/styles.scss"
 Vue.use(VueRouter);
 Vue.config.productionTip = false;
 
