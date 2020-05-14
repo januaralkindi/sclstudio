@@ -4,18 +4,37 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 12px;
+    color: $scl_paragraph;
+    margin-bottom: 0px !important;
+}
+
+.is-full-width {
+    width: 100%;
+}
+
+.is-full-height {
+    height: 100%;
+}
+
 .container {
     padding: 0 10%;
-
 }
 
-.circle {
-    height: 14px;
-    width: 14px;
-    background-color: #121212;
-    border-radius: 50%;
-    display: inline-block;
+.flex-row {
+    flex-direction: column;
 }
+
+// .circle {
+//     height: 14px;
+//     width: 14px;
+//     background-color: #121212;
+//     border-radius: 50%;
+//     display: inline-block;
+// }
 
 .devider {
     width: 100%;
@@ -83,7 +102,11 @@ p.is-title-section {
 
 .is-bold {
     font-weight: bold !important;
-    font-family: Poppins !important;
+    font-family: Montserrat !important;
+}
+
+.is-title {
+    color: $scl_title !important;
 }
 
 .is-padding {
@@ -101,4 +124,21 @@ p.is-title-section {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.005em;
+}
+
+.circle {
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+
+    &-yellow {
+        min-height: 25px;
+        min-width: 25px;
+        border-radius: 50%;
+        background-color: $scl_yellow;
+    }
+}
+
+.is-yellow-transparant {
+    background: rgba(244, 201, 36, 0.2);
 }

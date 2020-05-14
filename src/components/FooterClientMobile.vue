@@ -12,12 +12,16 @@
 		</div>
 		<div class="footer-client__content">
 			<swiper class="swiper swipper-client" :options="swiperOption">
-				<swiper-slide v-for="(images,index) in dataClients" :key="index">
-                    <div class="client-slide">
-                        <img :src="images" />
-                    </div>
-                </swiper-slide>
-			
+				<swiper-slide
+					class="client-slide"
+					v-for="(images, index) in dataClients"
+					:key="index"
+				>
+					<div class="client-slide">
+						<img :src="images" />
+					</div>
+				</swiper-slide>
+
 				<div class="swiper-pagination" slot="pagination"></div>
 			</swiper>
 		</div>
@@ -106,17 +110,19 @@
 	.swipper-client {
 		height: 142px;
 	}
-	.swiper-slide {
-		width: 60%;
+	// .swiper-slide {
+	// 	width: 60%;
+	// 	height: 92px;
+	// 	background: #f9f9f9;
+	// 	border-radius: 8px;
+	// }
+	.client-slide {
+		width: 228px;
 		height: 92px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: #f9f9f9;
 		border-radius: 8px;
-    }
-    .client-slide {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	}
 </style>

@@ -1,18 +1,24 @@
 <template>
 	<DefaultLayoutMobile>
         <Banner/>
-		<h1>hiii dari mobile</h1>
+		<About/>
+		<Services/>
 	</DefaultLayoutMobile>
 </template>
 
 <script>
     import DefaultLayoutMobile from "layout/DefaultMobile";
-    import Banner from './view/banner'
+	import Banner from './view/Banner'
+	import About from './view/About'
+	import Services from './view/Services'
+
 	export default {
 		name: "HomeMobile",
 		components: {
             DefaultLayoutMobile,
-            Banner
+			Banner,
+			Services,
+			About
 		},
 	};
 </script>

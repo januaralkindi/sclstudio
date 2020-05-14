@@ -11,7 +11,7 @@
 	export default {};
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 	@import "~@/assets/style/variable/color";
 	.banner {
 		background: url("~@/assets/image/home/mobile/banner.png");
@@ -19,7 +19,6 @@
 		min-height: 336px;
 		background-size: cover;
 		padding-top: 124px;
-		margin-bottom: 120px;
 		padding-left: 40px;
 		padding-right: 40px;
 

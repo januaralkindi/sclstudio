@@ -84,7 +84,6 @@
 
 <style lang="scss" scoped>
 	@import "~@/assets/style/variable/color";
-
 	.footer-client {
 		background: url("~@/assets/image/footer-patner-background.png");
 		background-size: 100% 100%;
