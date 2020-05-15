@@ -86,7 +86,7 @@
 		}
 		&__content {
 			width: 100%;
-            margin-bottom: 80px;
+            margin-bottom: 20px;
 			// height: 200px;
 		}
 		&__swiper {
@@ -95,20 +95,5 @@
 	}
 	.swipper-client {
 		height: 142px;
-		// padding-left: 70px;
 	}
-
-	// .swiper-slide {
-	// 	width: 60%;
-	// 	height: 92px;
-	// 	background: #f9f9f9;
-	// 	border-radius: 8px;
-	// }
-	// .client-slide {
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	align-items: center;
-	// }
 </style>

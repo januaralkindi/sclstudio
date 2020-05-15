@@ -3,6 +3,7 @@
         <Banner/>
 		<About/>
 		<Services/>
+		<Project/>
 	</DefaultLayoutMobile>
 </template>
 
@@ -11,14 +12,15 @@
 	import Banner from './view/Banner'
 	import About from './view/About'
 	import Services from './view/Services'
-
+	import Project from './view/Project'
 	export default {
 		name: "HomeMobile",
 		components: {
             DefaultLayoutMobile,
 			Banner,
 			Services,
-			About
+			About,
+			Project
 		},
 	};
 </script>

@@ -12,7 +12,7 @@
 		</div>
 		<div class="footer__build is-text-align-center ">
 			<p>Build an <span>Website?</span></p>
-			<v-btn color="#F4C924" class="send-button" large> SEND</v-btn>
+			<v-btn color="#F4C924" class="button" large> SEND</v-btn>
 		</div>
 		<div class="footer__information is-text-align-center">
 			<p class=" is-title-bold ">Information</p>
@@ -50,7 +50,7 @@
 	};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@import "~@/assets/style/variable/color";
 	.footer {
 		&__started {

@@ -25,6 +25,9 @@ p {
 }
 
 .flex-row {
+    flex-direction: row;
+}
+.flex-column {
     flex-direction: column;
 }
 
@@ -81,7 +84,10 @@ p.is-title-section {
 
 .is-text-align-left {
     text-align: left;
+}
 
+.is-text-white {
+    color: #ffff;
 }
 
 .is-text-align-right {
@@ -114,9 +120,9 @@ p.is-title-section {
 }
 
 
-.send-button {
-    width: 160px;
-    height: 46px;
+.button {
+    min-width: 160px !important;
+    min-height: 46px;
     background-color: $scl_yellow;
     font-family: Poppins;
     font-style: normal;
