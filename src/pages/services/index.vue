@@ -4,20 +4,20 @@
 			<ServicesMobile />
 		</mq-layout>
 		<mq-layout :mq="['md', 'lg']">
-			<ServiceDesktop />
+			<ServicesDesktop />
 		</mq-layout>
 	</div>
 </template>
 
 <script>
-	import ServiceDesktop from "./dekstop";
+	import ServicesDesktop from "./dekstop";
 	import ServicesMobile from "./mobile";
 	import AOS from "aos";
 
 	export default {
 		name: "HomePage",
 		components: {
-			ServiceDesktop,
+			ServicesDesktop,
 			ServicesMobile,
 		},
 		created() {

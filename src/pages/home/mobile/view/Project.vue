@@ -42,7 +42,9 @@
 		project_4,
 		project_5,
 	} from "@images";
-	import ProjectCard from "./ProjectCard";
+    import ProjectCard from "./ProjectCard";
+    import {CATEGORIES} from "@/data/";
+
 	export default {
 		name: "ServicesMobile",
 		components: {
@@ -50,15 +52,7 @@
 		},
 		data() {
 			return {
-				workCategories: [
-					"all",
-					"Branding",
-					"Web Design",
-					"Photography",
-					"Templates",
-					"Apps",
-					"Other",
-				],
+				workCategories: CATEGORIES,
 				dataWorker: [
 					{
 						image: project_1,

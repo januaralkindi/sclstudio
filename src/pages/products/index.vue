@@ -1,46 +1,31 @@
 <template>
-	<DefaultLayout>
-		<BannerOurs :title="titleBanner" :subTitle="subTitleBanner" :image="banner_products">
-			<p>
-				We pride ourselves on our commitment to exellence, as well as our
-				ability to deliver for our partners. Learn more about how our talent
-				team of passionate designers, developers, and product experts can build
-				value for you.
-			</p>
-
-			<p>
-				We believe that individual talent can only take you so far in our
-				industry. While personal excellence is highly valued at SCL, so is a
-				deep commitment to collaboration both internally and externally with
-				your team.
-			</p>
-		</BannerOurs>
-		<Product/>
-	</DefaultLayout>
+	<div>
+		<mq-layout mq="sm">
+			<ProductMobile />
+		</mq-layout>
+		<mq-layout :mq="['md', 'lg']">
+			<ProductDesktop />
+		</mq-layout>
+	</div>
 </template>
 
 <script>
-	import DefaultLayout from "layout/Default";
-	import BannerOurs from "components/BannerOurs";
-		import { banner_products } from "assets/image/image";
-	import Product from "./view/Product";
+	import ProductDesktop from "./desktop";
+	import ProductMobile from "./mobile";
 	import AOS from "aos";
+
 	export default {
-		name: "ProductPages",
+		name: "HomePage",
 		components: {
-			DefaultLayout,
-			BannerOurs,
-			Product
+			ProductMobile,
+			ProductDesktop,
 		},
-		data: () => ({
-			banner_products,
-			titleBanner: "Our Product",
-			subTitleBanner: "Fresh & Clean",
-		}),
-		created: () => {
+		created() {
 			AOS.init();
 		},
 	};
 </script>
 
-<style></style>
+<style lang="scss">
+	// @import "~@/assets/style/commons";
+</style>
