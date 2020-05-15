@@ -35,8 +35,8 @@
 <script>
 	import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 	import ServiceCard from "./SercviceCard";
+	import { SERVICES_LIST } from "@/data";
 	import "swiper/css/swiper.css";
-	import { ic_paper, ic_news, ic_lamp } from "@images";
 	export default {
 		name: "ServicesMobile",
 		components: {
@@ -48,31 +48,14 @@
 			return {
 				swiperOptionerre: {
 					slidesPerView: "auto",
-					spaceBetween: 30,
+					spaceBetween: 15,
 					centeredSlides: true,
 					pagination: {
 						el: ".swiper-pagination",
 						clickable: true,
 					},
 				},
-				dataServices: [
-					{
-						icon: ic_paper,
-						title: "User Interface",
-						description:
-							"Stunning, intuitive design is essential to your pro..",
-					},
-					{
-						icon: ic_news,
-						title: "User Experience",
-						description: "Stunning, intuitive design is essentia...",
-					},
-					{
-						icon: ic_lamp,
-						title: "User Experience",
-						description: "Stunning, intuitive design is essentia...",
-					},
-				],
+				dataServices: SERVICES_LIST,
 			};
 		},
 	};
@@ -86,7 +69,7 @@
 		}
 		&__content {
 			width: 100%;
-            margin-bottom: 20px;
+			margin-bottom: 20px;
 			// height: 200px;
 		}
 		&__swiper {
