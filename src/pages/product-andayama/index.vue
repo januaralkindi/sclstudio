@@ -1,26 +1,31 @@
-<template> 
-    <DefaultLayout>
-        <Banner/>
-        <Content/>
-    </DefaultLayout>
+<template>
+	<div>
+		<mq-layout mq="sm">
+			<ProductAndayamaMobile />
+		</mq-layout>
+		<mq-layout :mq="['md', 'lg']">
+			<ProductAndayamaDesktop />
+		</mq-layout>
+	</div>
 </template>
 
 <script>
+	import ProductAndayamaDesktop from "./desktop";
+	import ProductAndayamaMobile from "./mobile";
 	import AOS from "aos";
-    import DefaultLayout from "layout/Default";
-    import Banner from "./view/Banner"
-    import Content from "./view/Content"
+
 	export default {
-		name: "ProductAndayama",
+		name: "HomePage",
 		components: {
-            DefaultLayout,
-            Banner,
-            Content
-        },
-        created : () => {
-            AOS.init();
-        }
+			ProductAndayamaMobile,
+			ProductAndayamaDesktop,
+		},
+		created() {
+			AOS.init();
+		},
 	};
 </script>
 
-<style></style>
+<style lang="scss">
+	// @import "~@/assets/style/commons";
+</style>

@@ -4,7 +4,7 @@
 			<v-col
 				cols="12"
 				md="6"
-				class=" banner__detail banner-sanmaru-detail d-flex"
+				class=" banner__detail banner-sanmaru-detail d-flex flex-column"
 				data-aos="fade-right"
 				data-aos-offset="100"
 				data-aos-delay="50"
@@ -18,7 +18,7 @@
 				<h1 class="banner-sanmaru-detail__title">Sanmaru Apps</h1>
 				<div class="banner-sanmaru-detail__store">
 					<img :src="appstore" />
-					<img :src="playstore" />
+					<img class="store-plyastore" :src="playstore" />
 				</div>
 			</v-col>
 			<v-col
@@ -110,6 +110,14 @@
 		&__store {
 			align-items: center;
 			display: flex;
+			.store-plyastore {
+				width: 228px;
+				margin-left: 20px;
+			}
+			img {
+				width: 204px;
+				height: auto;
+			}
 		}
 	}
 </style>

@@ -12,6 +12,10 @@ import {
 	work_mobile_4,
 	work_mobile_5,
 	work_mobile_6,
+	product_1,
+	product_2,
+	product_3,
+	product_4,
 } from "@images";
 
 export const SERVICES_LIST = [
@@ -91,3 +95,10 @@ export const CATEGORIES = [
 	"Apps",
 	"Other",
 ];
+
+export const IMAGE_ANDAYAMA = [
+	product_1,
+	product_2,
+	product_3,
+	product_4,
+]

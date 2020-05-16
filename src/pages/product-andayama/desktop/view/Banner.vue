@@ -1,6 +1,6 @@
 <template>
 	<div class="banner scl-content">
-		<v-row class="d-flex align-center">
+		<v-row class="d-flex align-center product-sanmaru">
 			<v-col
 				cols="12"
 				md="6"
@@ -49,6 +49,10 @@
 </script>
 
 <style lang="scss" scoped>
+
+	.product-sanmaru{
+		margin-top: 150px;
+	}
 	.banner {
 		background: url("~@/assets/image/banner-andayama.png");
 		background-repeat: no-repeat;

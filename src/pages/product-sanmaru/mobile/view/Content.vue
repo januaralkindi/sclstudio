@@ -1,5 +1,5 @@
 <template>
-	<div class="content-sanmaru">
+	<div class="sanmaru-mobile">
 		<h1>Sanmaru Apps</h1>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -21,7 +21,7 @@
 			versions have evolved over the years, sometimes by accident, sometimes on
 			purpose.
 		</p>
-		<img :src="content_sanmaru" />
+		<img class="image-content" :src="content_sanmaru" />
 		<p>
 			There are many variations of passages of Lorem Ipsum available, but the
 			majority have suffered alteration in some form, by injected humour, or
@@ -37,87 +37,59 @@
 			The generated Lorem Ipsum is therefore always free from repetition,
 			injected humour, or non-characteristic words etc.
 		</p>
-		<div class="content-sanmaru__store">
-			<img class="store-appstore" :src="appstore" />
-			<img class="store-appstore" :src="playstore" />
+		<div class="sanmaru-mobile__store d-flex justify-center">
+			<img class="store__appstore" :src="appstore" />
+			<img class="store__playstore" :src="playstore" />
 		</div>
 	</div>
 </template>
 
 <script>
-	import { appstore, playstore, content_sanmaru } from "@/assets/image/image";
+	import { appstore, playstore, content_sanmaru } from "@images";
 
 	export default {
-		name: "BannerOurs",
-		props: {
-			title: {
-				type: String,
-				default: "",
-			},
-			subTitle: {
-				type: String,
-				default: "",
-			},
-			image: String,
-		},
-		data: () => {
-			return {
-				appstore,
-				playstore,
-				content_sanmaru,
-			};
-		},
+		name: "ContentSanmaruMobile",
+		data: () => ({
+			appstore,
+			playstore,
+			content_sanmaru,
+		}),
 	};
 </script>
 
-<style lang="scss" scope>
-	.content-sanmaru {
-		margin-top: 128px;
-		padding: 0 15%;
+<style lang="scss" scoped>
+	.sanmaru-mobile {
+		margin: 28px 0px;
 		h1 {
+			font-family: Montserrat;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 32px;
-			line-height: 39px;
+			font-size: 16px;
+			line-height: 20px;
 			letter-spacing: 0.5px;
 			color: #000000;
-			margin-bottom: 24px;
+			margin: 0px 16px;
 		}
 		p {
-			font-style: normal;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 24px;
-			/* or 171% */
-
-			letter-spacing: 0.5px;
-
-			color: #989898;
+			margin-bottom: 20px !important;
+			margin: 0 16px;
 		}
-		img {
-			margin: 24px 0px;
+		.image-content {
 			width: 100%;
+			margin: 24px 0px;
 		}
+
 		&__store {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			div {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 16%;
+			margin-top: 24px;
+			.store__appstore {
+				margin-right: 16px;
+				width: 98px;
+				height: auto;
 			}
-		}
-		&__store {
-			.store-appstore {
-				width: 228px;
-				margin-left: 20px;
-			}
-			img {
-				width: 202px;
-				height: 78px;
-				margin-left: 20px;
+			.store__playstore {
+				margin-right: 16px;
+				width: 98px;
+				height: auto;
 			}
 		}
 	}
