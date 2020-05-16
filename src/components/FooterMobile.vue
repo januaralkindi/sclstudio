@@ -11,7 +11,7 @@
 			</h1>
 		</div>
 		<div class="footer__build is-text-align-center ">
-			<p>Build an <span>Website?</span></p>
+			<p class="is-title">Build an <span  class="is-title">Website?</span></p>
 			<v-btn color="#F4C924" class="button" large> SEND</v-btn>
 		</div>
 		<div class="footer__information is-text-align-center">

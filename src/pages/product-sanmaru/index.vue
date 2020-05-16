@@ -1,32 +1,31 @@
 <template>
-	<DefaultLayout>
-		<Banner />
-        <Content/>
-	</DefaultLayout>
+	<div>
+		<mq-layout mq="sm">
+			<ProductSanmaruMobile />
+		</mq-layout>
+		<mq-layout :mq="['md', 'lg']">
+			<ProductSanmaruDesktop />
+		</mq-layout>
+	</div>
 </template>
 
 <script>
+	import ProductSanmaruDesktop from "./desktop";
+	import ProductSanmaruMobile from "./mobile";
 	import AOS from "aos";
-	import DefaultLayout from "layout/Default";
-	import { banner_works } from "assets/image/image";
-    import Banner from "./view/Banner";
-    import Content from './view/Content'
+
 	export default {
-		name: "ServicesPage",
+		name: "HomePage",
 		components: {
-			DefaultLayout,
-            Banner,
-            Content
+			ProductSanmaruMobile,
+			ProductSanmaruDesktop,
 		},
-		data: () => ({
-			banner_works,
-			titleBanner: "Inspiration",
-			subTitleBanner: "Every Client Brings New",
-		}),
-		created: () => {
+		created() {
 			AOS.init();
 		},
 	};
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+	// @import "~@/assets/style/commons";
+</style>

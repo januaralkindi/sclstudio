@@ -33,7 +33,7 @@
 	};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.work-item {
 		width: 100%;
 		// display: relative;

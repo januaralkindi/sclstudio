@@ -12,7 +12,7 @@
 				<!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 			</div>
 		</v-toolbar>
-		<v-navigation-drawer v-model="drawer" absolute temporary>
+		<v-navigation-drawer v-model="drawer" fixed temporary>
 			<v-list-item>
 				<div class="navbar-logo">
 					<img :src="logo" />
