@@ -47,5 +47,6 @@ export const ic_paper= require('./icons/ic-paper.png')
 export const ic_news= require('./icons/ic-news.png')
 export const ic_lamp= require('./icons/ic-lamp.png')
 export const ic_detail= require('./icons/ic-detail.png')
+export const ic_close= require('./icons/ic-close.png')
 
 

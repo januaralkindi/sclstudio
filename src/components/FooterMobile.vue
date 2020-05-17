@@ -11,8 +11,10 @@
 			</h1>
 		</div>
 		<div class="footer__build is-text-align-center ">
-			<p class="is-title">Build an <span  class="is-title">Website?</span></p>
-			<v-btn color="#F4C924" class="button" large> SEND</v-btn>
+			<p class="is-title">Build an <span class="is-title">Website?</span></p>
+			<v-btn color="#F4C924" @click="showModalMessage" class="button" large>
+				SEND</v-btn
+			>
 		</div>
 		<div class="footer__information is-text-align-center">
 			<p class=" is-title-bold ">Information</p>
@@ -34,18 +36,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer__copyright d-flex justify-center align-center is-text-align-center ">
+		<div
+			class="footer__copyright d-flex justify-center align-center is-text-align-center "
+		>
 			<p>SCL Studio | All Rights Reserved 2020</p>
 		</div>
+		<ModalMessage
+			@onCloseModal="onCloseModalMessage"
+			:showModal="isShowModalMessage"
+		/>
 	</div>
 </template>
 
 <script>
 	import FooterClientMobile from "./FooterClientMobile";
+	import ModalMessage from "./ModalMessage";
 	export default {
 		name: "FooterMobile",
 		components: {
 			FooterClientMobile,
+			ModalMessage,
+		},
+		data: () => ({
+			isShowModalMessage: false,
+		}),
+		methods: {
+			showModalMessage() {
+				this.isShowModalMessage = true;
+			},
+			onCloseModalMessage() {
+				this.isShowModalMessage = false;
+			},
 		},
 	};
 </script>
