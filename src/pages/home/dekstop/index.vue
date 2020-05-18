@@ -1,14 +1,13 @@
 <template>
-	<DefaultLayout>
+	<div>
 		<Header />
 		<About />
 		<Services />
 		<Project />
-	</DefaultLayout>
+	</div>
 </template>
 
 <script>
-	import DefaultLayout from "layout/Default";
 	import Header from "./view/Header";
 	import About from "./view/About";
 	import Services from "./view/Services";
@@ -17,7 +16,6 @@
 	export default {
 		name: "HomePage",
 		components: {
-			DefaultLayout,
 			Header,
 			About,
 			Services,

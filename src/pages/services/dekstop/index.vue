@@ -1,5 +1,5 @@
 <template>
-	<DefaultLayout>
+	<div>
 		<BannerOurs
 			:title="titleBanner"
 			:subTitle="subTitleBanner"
@@ -19,12 +19,11 @@
 			</p>
 		</BannerOurs>
 		<Services />
-	</DefaultLayout>
+	</div>
 </template>
 
 <script>
 	import AOS from "aos";
-	import DefaultLayout from "layout/Default";
 	import Services from "./view/Services";
 	import BannerOurs from "components/BannerOurs";
 	import { banner_services } from "assets/image/image";
@@ -32,7 +31,6 @@
 	export default {
 		name: "ServicesPage",
 		components: {
-			DefaultLayout,
 			Services,
 			BannerOurs,
 		},

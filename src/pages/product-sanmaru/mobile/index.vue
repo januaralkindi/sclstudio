@@ -1,18 +1,16 @@
 <template>
-	<DefaultLayoutMobile>
+	<div>
 		<Banner/>
 		<ContentSanmaru/>
-	</DefaultLayoutMobile>
+	</div>
 </template>
 
 <script>
-	import DefaultLayoutMobile from "layout/DefaultMobile";
 	import Banner from "./view/Banner"
 	import ContentSanmaru from './view/Content'
 	export default {
 		name: "ServicesMobile",
 		components: {
-			DefaultLayoutMobile,
 			Banner,
 			ContentSanmaru
 		},

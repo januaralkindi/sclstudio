@@ -23,11 +23,14 @@
 				</v-list-item-content>
 			</v-list-item>
 
-
 			<v-list dense>
 				<v-list-item v-for="(item, index) in items" :key="index" link>
 					<v-list-item-content>
-						<v-list-item-title>{{ item }}</v-list-item-title>
+						<v-list-item-title>
+							<router-link class="scl-menu-item" :to="{ name: item.name}">
+								{{ item.text }}
+							</router-link>
+						</v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>
@@ -44,13 +47,30 @@
 				logo: scl_logo_white,
 				app_bar_icon,
 				drawer: null,
-				items: ["Home", "Services", "Products", "Our Works", "Contact Us"],
+				items: [
+					{
+						text: "Home",
+						name: "home",
+					},
+					{
+						text: "Services",
+						name: "services",
+					},
+					{
+						text: "Products",
+						name: "products",
+					},
+					{
+						text: "Our Works",
+						name: "work",
+					},
+				],
 			};
 		},
 	};
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 	@import "~@/assets/style/variable/color";
 
 	.navbar {
@@ -90,7 +110,7 @@
 			font-weight: 600;
 			font-size: 16px;
 			line-height: 24px;
-			color: #121212;
+			color:#121212!important;
 			letter-spacing: 0.5px;
 		}
 
@@ -125,6 +145,16 @@
 			justify-content: center;
 			align-items: center;
 		}
+	}
+	.scl-menu-item{
+			display: flex;
+			padding: 0 12px;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 24px;
+			color:#121212!important;
+			letter-spacing: 0.5px;
+			text-decoration: none;
 	}
 
 	.v-toolbar__content {

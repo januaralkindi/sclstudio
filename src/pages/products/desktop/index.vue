@@ -1,6 +1,10 @@
 <template>
-	<DefaultLayout>
-		<BannerOurs :title="titleBanner" :subTitle="subTitleBanner" :image="banner_products">
+	<div>
+		<BannerOurs
+			:title="titleBanner"
+			:subTitle="subTitleBanner"
+			:image="banner_products"
+		>
 			<p>
 				We pride ourselves on our commitment to exellence, as well as our
 				ability to deliver for our partners. Learn more about how our talent
@@ -15,22 +19,20 @@
 				your team.
 			</p>
 		</BannerOurs>
-		<Product/>
-	</DefaultLayout>
+		<Product />
+	</div>
 </template>
 
 <script>
-	import DefaultLayout from "layout/Default";
 	import BannerOurs from "components/BannerOurs";
-		import { banner_products } from "assets/image/image";
+	import { banner_products } from "assets/image/image";
 	import Product from "./view/Product";
 	import AOS from "aos";
 	export default {
 		name: "ProductPages",
 		components: {
-			DefaultLayout,
 			BannerOurs,
-			Product
+			Product,
 		},
 		data: () => ({
 			banner_products,
