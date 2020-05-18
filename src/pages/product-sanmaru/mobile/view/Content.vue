@@ -1,7 +1,19 @@
 <template>
 	<div class="sanmaru-mobile">
-		<h1>Sanmaru Apps</h1>
-		<p>
+		<h1
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Sanmaru Apps
+		</h1>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -10,7 +22,13 @@
 			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 			est laborum.
 		</p>
-		<p>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+			data-aos-anchor-placement="top-bottom"
+		>
 			It is a long established fact that a reader will be distracted by the
 			readable content of a page when looking at its layout. The point of using
 			Lorem Ipsum is that it has a more-or-less normal distribution of letters,
@@ -21,15 +39,35 @@
 			versions have evolved over the years, sometimes by accident, sometimes on
 			purpose.
 		</p>
-		<img class="image-content" :src="content_sanmaru" />
-		<p>
+		<img
+			class="image-content"
+			:src="content_sanmaru"
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+			data-aos-anchor-placement="top-bottom"
+		/>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+			data-aos-anchor-placement="top-bottom"
+		>
 			There are many variations of passages of Lorem Ipsum available, but the
 			majority have suffered alteration in some form, by injected humour, or
 			randomised words which don't look even slightly believable. If you are
 			going to use a passage of Lorem Ipsum, you need to be sure there isn't
 			anything embarrassing hidden in the middle of text.
 		</p>
-		<p>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+			data-aos-anchor-placement="top-bottom"
+		>
 			All the Lorem Ipsum generators on the Internet tend to repeat predefined
 			chunks as necessary, making this the first true generator on the Internet.
 			It uses a dictionary of over 200 Latin words, combined with a handful of
@@ -38,8 +76,24 @@
 			injected humour, or non-characteristic words etc.
 		</p>
 		<div class="sanmaru-mobile__store d-flex justify-center">
-			<img class="store__appstore" :src="appstore" />
-			<img class="store__playstore" :src="playstore" />
+			<img
+				class="store__appstore"
+				:src="appstore"
+				data-aos="fade-right"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800"
+				data-aos-anchor-placement="top-bottom"
+			/>
+			<img
+				class="store__playstore"
+				:src="playstore"
+				data-aos="fade-left"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800"
+				data-aos-anchor-placement="top-bottom"
+			/>
 		</div>
 	</div>
 </template>

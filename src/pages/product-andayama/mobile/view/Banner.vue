@@ -1,10 +1,40 @@
 <template>
 	<div class="banner">
-		<p class="banner__subtitle is-title">Anandamaya Group</p>
-		<h1 class="banner__title is-title">Booking Online</h1>
+		<p
+			class="banner__subtitle is-title"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Anandamaya Group
+		</p>
+		<h1
+			class="banner__title is-title"
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Booking Online
+		</h1>
 		<div class="banner__store d-flex ">
-			<img class="store__appstore" :src="appstore" />
-			<img class="store__playstore" :src="playstore" />
+			<img
+				class="store__appstore"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800"
+				:src="appstore"
+			/>
+			<img
+				class="store__playstore"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="1000"
+				:src="playstore"
+			/>
 		</div>
 	</div>
 </template>

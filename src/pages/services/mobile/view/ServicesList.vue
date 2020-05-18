@@ -1,6 +1,14 @@
 <template>
 	<div class="services-list">
-		<h1 class=" services-list__title is-padding is-title-section ">Our Services.</h1>
+		<h1
+			class=" services-list__title is-padding is-title-section"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Our Services.
+		</h1>
 		<div
 			class="services-list__content d-flex is-padding flex-wrap justify-space-between"
 		>
@@ -11,6 +19,10 @@
 				:title="service.title"
 				:description="service.description"
 				widthHalf
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800 + index * 1 * 200"
 			/>
 		</div>
 	</div>
@@ -32,10 +44,10 @@
 </script>
 
 <style lang="scss" scoped>
-.services-list{
-    margin-top: 28px;
-    &__title {
-        margin-bottom: -20px;
-    }
-}
+	.services-list {
+		margin-top: 28px;
+		&__title {
+			margin-bottom: -20px;
+		}
+	}
 </style>

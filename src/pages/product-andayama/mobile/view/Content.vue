@@ -1,19 +1,41 @@
 <template>
 	<div class="andayama-mobile">
-		<swiper class="swiper" :options="swiperOption">
-			<swiper-slide v-for="(image, index) in imageAndayama" :key="index">
-				<img class="andayama-mobile__image" :src="image" />
-			</swiper-slide>
+		<div
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="1000"
+			data-aos-anchor-placement="center-bottom"
+		>
+			<swiper class="swiper" :options="swiperOption">
+				<swiper-slide v-for="(image, index) in imageAndayama" :key="index">
+					<img class="andayama-mobile__image" :src="image" />
+				</swiper-slide>
 
-			<div class="swiper-button-prev" slot="button-prev">
-				<!-- <div class="half-circle--right"></div> -->
-			</div>
-			<div class="swiper-button-next" slot="button-next">
-				<!-- <div class="half-circle--left"></div> -->
-			</div>
-		</swiper>
-		<h1>Detail Project</h1>
-		<p>
+				<div class="swiper-button-prev" slot="button-prev">
+					<!-- <div class="half-circle--right"></div> -->
+				</div>
+				<div class="swiper-button-next" slot="button-next">
+					<!-- <div class="half-circle--left"></div> -->
+				</div>
+			</swiper>
+		</div>
+
+		<h1
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="1000"
+			data-aos-anchor-placement="center-bottom"
+		
+		>Detail Project</h1>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="1000"
+			data-aos-anchor-placement="center-bottom"
+		>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -22,7 +44,13 @@
 			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 			est laborum.
 		</p>
-		<p>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="1000"
+			data-aos-anchor-placement="center-bottom"
+		>
 			It is a long established fact that a reader will be distracted by the
 			readable content of a page when looking at its layout. The point of using
 			Lorem Ipsum is that it has a more-or-less normal distribution of letters,
@@ -81,7 +109,6 @@
 			letter-spacing: 0.5px;
 			color: #000000;
 			margin: 12px 16px;
-		
 		}
 		p {
 			margin-bottom: 20px !important;

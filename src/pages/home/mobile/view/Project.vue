@@ -25,6 +25,10 @@
 				:image="value.image"
 				:title="value.title"
 				:description="value.description"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800 + index * 1 * 200"
 			/>
 		</div>
 		<v-row class="is-padding  d-flex  justify-center">
@@ -42,8 +46,8 @@
 		project_4,
 		project_5,
 	} from "@images";
-    import ProjectCard from "./ProjectCard";
-    import {CATEGORIES} from "@/data/";
+	import ProjectCard from "./ProjectCard";
+	import { CATEGORIES } from "@/data/";
 
 	export default {
 		name: "ServicesMobile",

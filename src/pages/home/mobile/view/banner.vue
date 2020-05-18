@@ -1,7 +1,21 @@
 <template>
 	<div class="banner">
-		<h1>We Make <span> Design </span></h1>
-		<p>
+		<h1
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="800"
+			data-aos-easing="ease-in-out"
+		>
+			We Make <span> Design </span>
+		</h1>
+		<p
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="580"
+			data-aos-easing="ease-in-out"
+		>
 			Between your business objectives and what your customers want.
 		</p>
 	</div>

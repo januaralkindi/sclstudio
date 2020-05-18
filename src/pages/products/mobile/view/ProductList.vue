@@ -19,26 +19,29 @@
 		<div
 			class="project__list d-flex is-padding flex-wrap justify-space-between"
 		>
-            <ProductItem
-                v-for="(product , index) in dataProduct"
-                :key="index"
-                :image="product.image"
-                :title="product.title"
-                :description="product.description"
-
-            />
-        </div>
+			<ProductItem
+				v-for="(product, index) in dataProduct"
+				:key="index"
+				:image="product.image"
+				:title="product.title"
+				:description="product.description"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800 + index * 1 * 200"
+			/>
+		</div>
 	</div>
 </template>
 
-<script>    
+<script>
 	import { PRODUCT_LIST, CATEGORIES } from "@/data/";
-    import ProductItem from './ProductItem'
+	import ProductItem from "./ProductItem";
 	export default {
 		name: "ServicesMobile",
 		components: {
-            ProductItem
-        },
+			ProductItem,
+		},
 		data() {
 			return {
 				workCategories: CATEGORIES,

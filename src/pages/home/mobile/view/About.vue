@@ -1,6 +1,13 @@
 <template>
 	<div class="about">
-		<div class="about__item about-item d-flex ">
+		<div
+			class="about__item about-item d-flex "
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="800"
+			data-aos-easing="ease-in-out"
+		>
 			<div class="about-item__icon">
 				<div class="circle is-yellow-transparant is-full-width is-full-height ">
 					<img :src="ic_news" />
@@ -16,7 +23,14 @@
 				</v-icon>
 			</div>
 		</div>
-        <div class="about__item about-item d-flex ">
+		<div
+			class="about__item about-item d-flex"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+		>
 			<div class="about-item__icon">
 				<div class="circle is-yellow-transparant is-full-width is-full-height ">
 					<img :src="ic_paper" />
@@ -32,14 +46,21 @@
 				</v-icon>
 			</div>
 		</div>
-        <div class="about__item about-item d-flex ">
+		<div
+			class="about__item about-item d-flex"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="1200"
+			data-aos-easing="ease-in-out"
+		>
 			<div class="about-item__icon">
 				<div class="circle is-yellow-transparant is-full-width is-full-height ">
 					<img :src="ic_lamp" />
 				</div>
 			</div>
 			<div class="about-item__text">
-				<p class="is-bold is-title"> Being small we can go into details</p>
+				<p class="is-bold is-title">Being small we can go into details</p>
 				<p>make your selection from a range</p>
 			</div>
 			<div class="about-item__icon-left">
@@ -70,13 +91,13 @@
 		border-radius: 8px;
 		width: 92%;
 		margin: 16px;
-        box-sizing: border-box;
-        margin-top: -80px;
+		box-sizing: border-box;
+		margin-top: -80px;
 	}
 	.about-item {
 		padding: 16px;
-        align-items: center;
-        border-bottom: 1px solid #F9F9F9;
+		align-items: center;
+		border-bottom: 1px solid #f9f9f9;
 		&__icon {
 			width: 40px;
 			height: 40px;
@@ -89,10 +110,10 @@
 		}
 		&__icon-left {
 			margin-left: auto;
-            order: 2;
-            i{
-                font-size: 12px;
-            }
+			order: 2;
+			i {
+				font-size: 12px;
+			}
 		}
 	}
 </style>

@@ -1,14 +1,46 @@
 <template>
 	<div class="banner">
-		<p class="banner__subtitle is-title">Our Product</p>
-		<h1 class="banner__title is-title">Fresh & Clean</h1>
-		<p class="banner__description">
+		<p
+			class="banner__subtitle is-title"
+			data-aos="fade-down"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="580"
+			data-aos-easing="ease-in-out"
+		>
+			Our Product
+		</p>
+		<h1
+			class="banner__title is-title"
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="580"
+			data-aos-easing="ease-in-out"
+		>
+			Fresh & Clean
+		</h1>
+		<p
+			class="banner__description"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="800"
+			data-aos-easing="ease-in-out"
+		>
 			We pride ourselves on our commitment to exellence, as well as our ability
 			to deliver for our partners. Learn more about how our talent team of
 			passionate designers, developers, and product experts can build value for
 			you.
 		</p>
-		<p class="banner__description">
+		<p
+			class="banner__description"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			data-aos-duration="800"
+			data-aos-easing="ease-in-out"
+		>
 			We believe that individual talent can only take you so far in our
 			industry. While personal excellence is highly valued at SCL, so is a deep
 			commitment to collaboration both internally and externally with your team.

@@ -19,24 +19,28 @@
 		<div
 			class="work-list__list d-flex is-padding flex-wrap justify-space-around"
 		>
-        <WorkItem
-            v-for="(work,index) in workList"
-            :key="index"
-            :image="work.image"
-            :title="work.title"
-        />
-        </div>
+			<WorkItem
+				v-for="(work, index) in workList"
+				:key="index"
+				:image="work.image"
+				:title="work.title"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800 + index * 1 * 200"
+			/>
+		</div>
 	</div>
 </template>
 
-<script>    
-    import { WORK_LIST} from "@/data/";
-    import WorkItem from './WorkItem'
+<script>
+	import { WORK_LIST } from "@/data/";
+	import WorkItem from "./WorkItem";
 	export default {
 		name: "ServicesMobile",
 		components: {
-            WorkItem
-        },
+			WorkItem,
+		},
 		data() {
 			return {
 				workList: WORK_LIST,

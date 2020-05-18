@@ -1,14 +1,38 @@
 <template>
 	<div class="banner">
-		<p class="banner__subtitle is-title">Every Client Brings</p>
-		<h1 class="banner__title is-title">New Inspiration</h1>
-		<p class="banner__description">
+		<p
+			class="banner__subtitle is-title"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Every Client Brings
+		</p>
+		<h1 class="banner__title is-title"
+			data-aos="fade-up"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		
+		>New Inspiration</h1>
+		<p class="banner__description"
+			data-aos="fade-right"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="1200"
+		>
 			We pride ourselves on our commitment to exellence, as well as our ability
 			to deliver for our partners. Learn more about how our talent team of
 			passionate designers, developers, and product experts can build value for
 			you.
 		</p>
-		<p class="banner__description">
+		<p class="banner__description"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="1200"
+		>
 			We pride ourselves on our commitment to exellence, as well as our ability
 			to deliver for our partners. Learn more about how our talent team of
 			passionate designers, developers, and product experts can build value for

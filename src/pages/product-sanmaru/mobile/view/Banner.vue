@@ -1,10 +1,40 @@
 <template>
 	<div class="banner">
-		<p class="banner__subtitle is-title">Cool Design</p>
-		<h1 class="banner__title is-title">Sanmaru Apps</h1>
+		<p
+			class="banner__subtitle is-title"
+			data-aos="fade-left"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Cool Design
+		</p>
+		<h1
+			class="banner__title is-title"
+			data-aos="fade-right"
+			data-aos-offset="50"
+			data-aos-delay="12"
+			:data-aos-duration="800"
+		>
+			Sanmaru Apps
+		</h1>
 		<div class="banner__store d-flex ">
-			<img class="store__appstore" :src="appstore" />
-			<img class="store__playstore" :src="playstore" />
+			<img
+				class="store__appstore"
+				:src="appstore"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="800"
+			/>
+			<img
+				class="store__playstore"
+				:src="playstore"
+				data-aos="fade-up"
+				data-aos-offset="50"
+				data-aos-delay="12"
+				:data-aos-duration="1000"
+			/>
 		</div>
 	</div>
 </template>
